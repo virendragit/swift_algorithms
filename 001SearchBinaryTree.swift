@@ -1,3 +1,14 @@
+//
+//  SearchBinaryTree.swift
+//  swift_algos
+//
+//  Created by Virendra Gupta on 4/20/20.
+//  Copyright © 2020 sample. All rights reserved.
+//
+
+import Foundation
+
+
 import UIKit
 
 // 1.
@@ -50,35 +61,4 @@ func search(node: Node?, searchValue: Int) -> Bool{
 }
 
 //4. call func to search the value.
-search(node: rootNode, searchValue: 20)
-
-
-//
-let list = [1,5,10,11,14,20]
-let index = list.firstIndex(where:{$0 == 20})
-
-// Finding longestSubsSrring WithOut Repeating
-class Solution {
-    func lengthOfLongestSubstring(_ str: String) -> Int {
-        
-        var characterDict = [Character:Int]()
-        var maxLength = 0
-        var lastRepeatPos = -1
-        var i = 0
-        
-        for c in str{
-            if (characterDict[c] != nil) && (characterDict[c]! > lastRepeatPos) {
-                lastRepeatPos = characterDict[c]!
-            }
-            
-            maxLength = max(i - lastRepeatPos, maxLength)
-            characterDict[c] = i
-            i += 1
-        }
-        
-        return maxLength
-    }
-}
-
-Solution().lengthOfLongestSubstring("abcdabcbb")
-
+//search(node: rootNode, searchValue: 20)

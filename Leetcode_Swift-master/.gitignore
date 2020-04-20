@@ -1,0 +1,14 @@
+config.cfg
+
+.vscode/
+
+ghostdriver.log
+
+cookies.json
+
+cookies.log
+
+venv/
+
+cookies.json
+
